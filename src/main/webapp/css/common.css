@@ -1,0 +1,59 @@
+*{
+    font-size: 62.5%;
+     box-sizing: border-box;
+     outline: none;
+     border: none;
+    }
+    .login{
+      font-size: 3rem;
+      background-color: #fff;
+      padding:9rem 7.5rem;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 2rem;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: darkgrey;
+      background-image: url(../img/backgroundPageLogin.jpg);
+      background-size: cover;
+    }
+    .loginHeading{
+      color: #373941;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 3rem;
+    }
+    .login-lable{
+      font-size: 2.3rem;
+      color:#373941 ;
+      margin-bottom: 1rem;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .login-input{
+      display: block;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      background-color: #f2f2f5;
+      width: 100%;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+    }
+    .login-submit{
+        padding: 2rem;
+        color:white;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border-radius: 2rem;
+        background-color: #82c91e;
+    }
+    .signup{
+      text-align: right;
+      font-size: 2.3rem;
+    }

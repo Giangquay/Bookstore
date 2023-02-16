@@ -7,8 +7,8 @@
 </head>
 <body>
     <jsp:include page="header.jsp"/>
-    <h1>Day la trang giao dien</h1>
-    <a href="views/user/login.jsp">login</a>
+    <h1>Day la trang giao dien </h1>
+    <a href="${pageContext.request.contextPath}/login">login</a>
     <jsp:include page="footer.jsp"/>
 </body>
 </html>

@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface IKhachHangServices {
     List<KhachHang> selectAll();
+
+    KhachHang selectByUsernameAndPassWord(KhachHang kh);
 }

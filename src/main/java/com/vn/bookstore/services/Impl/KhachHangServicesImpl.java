@@ -6,9 +6,14 @@ import com.vn.bookstore.services.IKhachHangServices;
 
 import java.util.List;
 
-public class SanPhamServicesImpl implements IKhachHangServices {
+public class KhachHangServicesImpl implements IKhachHangServices {
     @Override
     public List<KhachHang> selectAll() {
         return KhachHangImpl.getInstance().getAll();
+    }
+
+    @Override
+    public KhachHang selectByUsernameAndPassWord(KhachHang kh) {
+        return KhachHangImpl.getInstance().selectByUsernameAndPassWord(kh);
     }
 }

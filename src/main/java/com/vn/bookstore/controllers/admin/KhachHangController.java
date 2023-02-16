@@ -2,7 +2,7 @@ package com.vn.bookstore.controllers.admin;
 
 import com.vn.bookstore.models.KhachHang;
 import com.vn.bookstore.services.IKhachHangServices;
-import com.vn.bookstore.services.Impl.SanPhamServicesImpl;
+import com.vn.bookstore.services.Impl.KhachHangServicesImpl;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet(urlPatterns = "/admin/khach-hang/list")
 public class KhachHangController extends HttpServlet {
-    IKhachHangServices khachHangServices = new SanPhamServicesImpl();
+    IKhachHangServices khachHangServices = new KhachHangServicesImpl();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<KhachHang> kh = khachHangServices.selectAll();
